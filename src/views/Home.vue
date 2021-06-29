@@ -1,5 +1,6 @@
 <template>
     <div class="container-fluid p-0">
+        <Header/>
         <Hero/>
     </div>
     <div class="row mx-0">
@@ -12,10 +13,12 @@
 <script>
 
 import Hero from "../components/Hero";
+import Header from "../components/Header";
 
 export default {
     name: 'Home',
     components: {
+        Header,
         Hero,
     }
 }
