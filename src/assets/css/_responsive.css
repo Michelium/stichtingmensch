@@ -1,0 +1,43 @@
+@media (max-width: 425px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    section:not(#header) {
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 991px) {
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    section:not(#header) {
+        margin-bottom: 100px;
+    }
+}

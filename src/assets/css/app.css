@@ -1,1 +1,56 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import "_responsive.css";
+
+:root {
+    --light-green: #E8FFF4;
+    --green: #099553;
+    --red: #DF210C;
+    --text-dark: #434443;
+    --text-light: #707070;
+}
+
+main {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+section:not(#header) {
+    margin-bottom: 250px;
+}
+
+
+h1 {
+    font-size: 120px;
+    color: var(--green);
+    font-weight: bold;
+}
+h2 {
+    font-size: 32px;
+    color: var(--text-light);
+}
+h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--text-dark);
+}
+h4 {
+    font-size: 32px;
+    font-weight: bolder;
+    color: var(--text-dark);
+}
+p {
+    font-size: 25px;
+    color: var(--text-light);
+}
+
+.text-red {
+    color: var(--red);
+}
+.text-green {
+    color: var(--green);
+}
+.text-dark {
+    color: var(--text-dark);
+}
+.text-light {
+    color: var(--text-light);
+}
