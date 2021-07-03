@@ -99,4 +99,8 @@ export default {
         height: 45px;
     }
 }
+
+.photo {
+    max-width: 450px
+}
 </style>
