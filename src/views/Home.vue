@@ -8,6 +8,9 @@
             <Goals/>
         </div>
     </div>
+    <div class="container-fluid p-0">
+        <Methods/>
+    </div>
 </template>
 
 <script>
@@ -15,10 +18,12 @@
 import Hero from "../components/Hero";
 import Header from "../components/Header";
 import Goals from "../components/Goals";
+import Methods from "../components/Methods";
 
 export default {
     name: 'Home',
     components: {
+        Methods,
         Goals,
         Header,
         Hero,
