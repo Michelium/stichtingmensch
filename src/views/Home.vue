@@ -13,8 +13,11 @@
     </div>
     <div class="row mx-0">
         <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-            <Work/>
+            <Foundation/>
         </div>
+    </div>
+    <div class="container-fluid p-0">
+        <Contact/>
     </div>
 </template>
 
@@ -24,12 +27,14 @@ import Hero from "../components/Hero";
 import Header from "../components/Header";
 import Goals from "../components/Goals";
 import Methods from "../components/Methods";
-import Work from "../components/Work";
+import Contact from "../components/Contact";
+import Foundation from "../components/Foundation";
 
 export default {
     name: 'Home',
     components: {
-        Work,
+        Foundation,
+        Contact,
         Methods,
         Goals,
         Header,

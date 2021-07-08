@@ -17,10 +17,10 @@
                     <div class="col-12 col-md-12 col-lg-8 col-xxl-6">
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                             <ul class="navbar-nav ms-auto">
-                                <li class="nav-item"><a class="nav-link">Onze doelen</a></li>
-                                <li class="nav-item"><a class="nav-link">Onze werkwijze</a></li>
-                                <li class="nav-item"><a class="nav-link">De stichting</a></li>
-                                <li class="nav-item"><a class="nav-link">Contact</a></li>
+                                <li class="nav-item"><a @click="scrollTo('#goals', -120)" class="nav-link">Onze doelen</a></li>
+                                <li class="nav-item"><a @click="scrollTo('#methods', -85)" class="nav-link">Onze werkwijze</a></li>
+                                <li class="nav-item"><a @click="scrollTo('#foundation', -150)" class="nav-link">De stichting</a></li>
+                                <li class="nav-item"><a @click="scrollTo('#contact')" class="nav-link">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -32,15 +32,35 @@
 
 <script>
 export default {
-    name: "Header"
+    name: "Header",
+    methods: {
+        scrollTo(selector, yOffset = 0) {
+            const el = document.querySelector(selector);
+            const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+            window.scrollTo({top: y, behavior: 'smooth'});
+        }
+    },
 }
+
+window.addEventListener("scroll", (event) => {
+    var navbar = document.getElementById('custom-navbar');
+
+    let scroll = document.body.getBoundingClientRect().top;
+
+    if (scroll < 0) {
+        navbar.classList.add('scrolled');
+    } else if (scroll === 0) {
+        navbar.classList.remove('scrolled')
+    }
+});
 </script>
 
 <style scoped>
-/*TODO add scroll effect to header*/
 .scrolled {
-    background: rgb(0, 0, 0) !important;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 212, 255, 0) 100%) !important;
+    -webkit-box-shadow: 0px 10px 28px -6px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 10px 28px -6px rgba(0,0,0,0.63);
+    box-shadow: 0px 10px 28px -6px rgba(0,0,0,0.63);
 }
 
 .row {

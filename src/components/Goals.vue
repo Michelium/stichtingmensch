@@ -37,8 +37,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-5">
-                <img class="w-100 photo float-end" src="~@/assets/images/goals/goals.jpg" alt="Doelen">
+            <div class="col-12 col-md-5 text-center text-md-start">
+                <img class="w-100 photo float-none float-md-end" src="~@/assets/images/goals/goals.jpg" alt="Doelen">
             </div>
         </div>
     </section>

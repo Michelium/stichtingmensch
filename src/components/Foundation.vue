@@ -1,5 +1,5 @@
 <template>
-    <section id="goals">
+    <section id="foundation">
         <div class="row mx-0">
             <div class="col-12 col-md-5 text-center text-md-start">
                 <img class="w-100 photo mx-auto" src="~@/assets/images/work/work.jpg" alt="Hoe werken wij">
@@ -8,7 +8,7 @@
                 <div class="row align-items-center h-100">
                     <div class="col-12 mx-auto">
                         <div class="mt-5 mt-md-0">
-                            <h3>Hoe werken wij?</h3>
+                            <h3>De stichting</h3>
                             <p>
                                 Lorem ipsum dolor sit amet. Eos nesciunt voluptas in quae quam vel placeat dolor et temporibus nisi ut cupiditate sint eos consequuntur repudiandae. Nam voluptatem dolor a magni molestiae ut doloremque neque. Ut voluptas illo At
                                 illo accusamus et earum magni et illum soluta aut nobis obcaecati. Et tempore eius aut aliquid commodi est repellendus expedita vel incidunt sunt. <br><br>
@@ -26,7 +26,7 @@
 
 <script>
 export default {
-    name: 'Work',
+    name: 'Foundation',
 }
 </script>
 
