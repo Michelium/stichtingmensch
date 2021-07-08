@@ -3,7 +3,7 @@
         <div class="row mx-0">
             <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center text-section">
                 <h1>Men<span class="text-red">s</span>ch</h1>
-                <h2>Maatschappelijk en <wbr>sociale bijdrage</h2>
+                <h2>Maatschappelijk en <wbr>sociale cohesie</h2>
             </div>
         </div>
     </section>
