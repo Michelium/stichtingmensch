@@ -6,29 +6,11 @@
             </div>
             <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
                 <div class="row">
-                    <div class="col-12 col-lg-4 mb-4">
-                        <div class="card">
-                            <img src="~@/assets/images/methods/method1.png" alt="Methode 1">
-                            <hr>
-                            <h4 class="text-center fst-italic">Lorem ipsum dolor sit eos</h4>
-                            <p class="text-center fst-italic">Lorem ipsum dolor sit amet. Eos nesciunt voluptas in quae quam vel placeat dolor et temporibus</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 mb-4">
-                        <div class="card">
-                            <img src="~@/assets/images/methods/method1.png" alt="Methode 2">
-                            <hr>
-                            <h4 class="text-center fst-italic">Lorem ipsum dolor sit eos</h4>
-                            <p class="text-center fst-italic">Lorem ipsum dolor sit amet. Eos nesciunt voluptas in quae quam vel placeat dolor et temporibus</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 mb-4">
-                        <div class="card">
-                            <img src="~@/assets/images/methods/method1.png" alt="Methode 3">
-                            <hr>
-                            <h4 class="text-center fst-italic">Lorem ipsum dolor sit eos</h4>
-                            <p class="text-center fst-italic">Lorem ipsum dolor sit amet. Eos nesciunt voluptas in quae quam vel placeat dolor et temporibus</p>
-                        </div>
+                    <div class="col-12">
+                        <p>Wij zijn er voor het welbevinden van mensen. Wij willen dicht bij de mensen staan. Om hen een perspectief te geven op een zinvolle deelname aan het maatschappelijk leven. Wij zetten ons met name in voor die
+                            mensen, bij wie dat perspectief (tijdelijk) ontbreekt en dreigen aan de kant te komen staan.
+                            Wij helpen mensen vooruit door hun grenzen te verleggen aan de hand van activiteiten en sociale verbanden in de wijk. Wij laten mensen (weer) eigen kracht ervaren, bij voorkeur door talenten van mensen aan elkaar
+                            te verbinden. Dit draagt bij aan de versterking van sociale contacten, saamhorigheid en prettig wonen.</p>
                     </div>
                 </div>
             </div>
@@ -48,31 +30,11 @@ export default {
     padding: 50px 0;
 }
 
-.card {
-    padding: 40px 30px;
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.29);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.29);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.29);
-    transition: 0.2s;
-}
-.card:hover {
-    background-color: #f1f1f1;
-}
-.card img {
-    width: 95%;
-    margin: 0 auto 20px auto;
-}
-.card hr {
-    background-color: var(--green);
-    border-top: 8px solid var(--green);
-    opacity: 1;
-    margin-bottom: 30px;
-}
-
 @media (min-width: 991px) {
     h4 {
         font-size: 25px;
     }
+
     p {
         font-size: 20px;
     }

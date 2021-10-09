@@ -26,6 +26,7 @@ section {
 }
 
 h2 {
+    color: black;
     text-transform: unset;
     margin-bottom: unset;
 }

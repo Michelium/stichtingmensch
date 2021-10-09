@@ -15,7 +15,7 @@ main {
     font-family: 'Source Sans Pro', sans-serif;
 }
 section:not(#header) {
-    margin-bottom: 250px;
+    margin-bottom: 100px;
 }
 
 

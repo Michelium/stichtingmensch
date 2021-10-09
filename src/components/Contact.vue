@@ -5,14 +5,10 @@
                 <h3 class="mb-5">Contacteer ons</h3>
                 <p>
                     Stichting Mensch <br>
-                    Kempkesstraat 144 <br>
-                    7218 PD Den Haag
+                    Haverschmidtstraat 10 <br>
+                    2522 VN Den Haag
                 </p>
                 <table>
-                    <tr>
-                        <th><p>TELEFOON:</p></th>
-                        <td><p>070 1234567</p></td>
-                    </tr>
                     <tr>
                         <th><p>E-MAIL:</p></th>
                         <td><p>info@stichtingmensch.nl</p></td>
@@ -22,7 +18,7 @@
                     </tr>
                     <tr>
                         <th><p>KVK:</p></th>
-                        <td><p>123456789</p></td>
+                        <td><p>60597364</p></td>
                     </tr>
                 </table>
             </div>

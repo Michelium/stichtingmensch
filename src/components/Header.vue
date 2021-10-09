@@ -17,7 +17,7 @@
                     <div class="col-12 col-md-12 col-lg-8 col-xxl-6">
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                             <ul class="navbar-nav ms-auto">
-                                <li class="nav-item"><a @click="scrollTo('#goals', -120)" class="nav-link">Onze doelen</a></li>
+                                <li class="nav-item"><a @click="scrollTo('#goals', -120)" class="nav-link">Missie en visie</a></li>
                                 <li class="nav-item"><a @click="scrollTo('#methods', -85)" class="nav-link">Onze werkwijze</a></li>
                                 <li class="nav-item"><a @click="scrollTo('#foundation', -150)" class="nav-link">De stichting</a></li>
                                 <li class="nav-item"><a @click="scrollTo('#contact')" class="nav-link">Contact</a></li>
