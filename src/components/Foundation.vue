@@ -1,13 +1,13 @@
 <template>
     <section id="foundation">
         <div class="row mx-0">
-            <div class="col-12 col-md-5 text-center text-md-start">
+            <div class="col-12 col-md-5 order-last order-md-first text-center text-md-start">
                 <img class="w-100 photo mx-auto" src="~@/assets/images/work/work.jpg" alt="Hoe werken wij">
             </div>
-            <div class="col-12 col-md-7">
+            <div class="col-12 col-md-7 order-first order-md-last">
                 <div class="row align-items-center h-100">
                     <div class="col-12 mx-auto">
-                        <div class="mt-5 mt-md-0">
+                        <div>
                             <h3>De stichting</h3>
                             <p>
                                 Stichting Mensch is ontstaan in 2014 doordat we hebben gezien dat er in het werkveld van welzijn teveel fragmentatie is van (zelf)organisaties.

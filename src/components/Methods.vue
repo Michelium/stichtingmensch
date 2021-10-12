@@ -30,6 +30,12 @@ export default {
     padding: 50px 0;
 }
 
+@media (max-width: 425px) {
+    .row {
+        padding: 15px 0;
+    }
+}
+
 @media (min-width: 991px) {
     h4 {
         font-size: 25px;
