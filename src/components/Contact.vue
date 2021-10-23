@@ -5,22 +5,9 @@
                 <h3 class="mb-5">Contacteer ons</h3>
                 <p>
                     Stichting Mensch <br>
-                    Haverschmidtstraat 10 <br>
-                    2522 VN Den Haag
                 </p>
-                <table>
-                    <tr>
-                        <th><p>E-MAIL:</p></th>
-                        <td><p>info@stichtingmensch.nl</p></td>
-                    </tr>
-                    <tr>
-                        <th>&nbsp;</th>
-                    </tr>
-                    <tr>
-                        <th><p>KVK:</p></th>
-                        <td><p>60597364</p></td>
-                    </tr>
-                </table>
+                <p>E-mail: <a class="text-decoration-none" href="mailto:info@stichtingmensch.nl">info@stichtingmensch.nl</a></p>
+                <p>KVK: 60597364</p>
             </div>
             <div class="col-12 col-md-5 col-lg-4">
                 <form class="mt-4" action="" @submit.prevent="sendEmail">
@@ -43,7 +30,7 @@
                         <label class="fst-italic" for="message">Bericht:</label>
                         <textarea v-model="message" class="form-control bg-light py-2" name="message" id="message" autocomplete="off" required rows="4"></textarea>
                     </div>
-                    <button :disabled="!loaded"  type="submit" class="btn">VERSTUUR</button>
+                    <button :disabled="!loaded" type="submit" class="btn">VERSTUUR</button>
                 </form>
             </div>
         </div>
@@ -96,8 +83,9 @@ export default {
 
 <style scoped>
 section {
-    margin-bottom: unset!important;
+    margin-bottom: unset !important;
 }
+
 .row {
     background-color: var(--light-green);
     padding: 50px 0;
@@ -109,14 +97,17 @@ table p {
 
 th {
     font-weight: normal;
-    min-width: 120px;
+}
+
+a {
+    color: var(--green);
 }
 
 label {
     color: var(--text-light);
 }
 
-input,textarea {
+input, textarea {
     border-radius: 10px;
 }
 
