@@ -35,6 +35,10 @@ export default {
     }
 }
 
+img {
+    border-radius: 10px;
+}
+
 .photo {
     max-width: 450px
 }
