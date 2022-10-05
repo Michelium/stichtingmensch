@@ -386,3 +386,94 @@
   INFO [2f7a4ed6] Running /usr/bin/env echo "Branch master (at d7af158656a21c87b246a5a6d3d91bca9dedc60d) deployed as release 20211023092928 by Michel" >> ~/domains/stichtingmensch.nl/revisions.log as u114524p110947@web0139.zxcs.nl
  DEBUG [2f7a4ed6] Command: cd ~/domains/stichtingmensch.nl/releases && /usr/bin/env echo "Branch master (at d7af158656a21c87b246a5a6d3d91bca9dedc60d) deployed as release 20211023092928 by Michel" >> ~/domains/stichtingmensch.nl/revisions.log
   INFO [2f7a4ed6] Finished in 0.613 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-10-05 18:15:33 +0200 cap prod deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [42f88976] Running /usr/bin/env mkdir -p /home/u114524p110947/tmp as u114524p110947@web0139.zxcs.nl
+ DEBUG [42f88976] Command: /usr/bin/env mkdir -p /home/u114524p110947/tmp
+  INFO [42f88976] Finished in 1.375 seconds with exit status 0 (successful).
+ DEBUG Uploading /home/u114524p110947/tmp/git-ssh-80ca44c5eb1245f047f4.sh 0.0%
+  INFO Uploading /home/u114524p110947/tmp/git-ssh-80ca44c5eb1245f047f4.sh 100.0%
+  INFO [a0a46cec] Running /usr/bin/env chmod 700 /home/u114524p110947/tmp/git-ssh-80ca44c5eb1245f047f4.sh as u114524p110947@web0139.zxcs.nl
+ DEBUG [a0a46cec] Command: /usr/bin/env chmod 700 /home/u114524p110947/tmp/git-ssh-80ca44c5eb1245f047f4.sh
+  INFO [a0a46cec] Finished in 0.790 seconds with exit status 0 (successful).
+  INFO [d057917a] Running /usr/bin/env git ls-remote git@github.com:Michelium/stichtingmensch.git HEAD as u114524p110947@web0139.zxcs.nl
+ DEBUG [d057917a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/u114524p110947/tmp/git-ssh-80ca44c5eb1245f047f4.sh" ; /usr/bin/env git ls-remote git@github.com:Michelium/stichtingmensch.git HEAD )
+ DEBUG [d057917a] 	72e06c1de5327f43fed9c48f32fe1dfe28133a18	HEAD
+  INFO [d057917a] Finished in 1.929 seconds with exit status 0 (successful).
+  INFO [ef195322] Running /usr/bin/env mkdir -p ~/domains/stichtingmensch.nl/shared ~/domains/stichtingmensch.nl/releases as u114524p110947@web0139.zxcs.nl
+ DEBUG [ef195322] Command: /usr/bin/env mkdir -p ~/domains/stichtingmensch.nl/shared ~/domains/stichtingmensch.nl/releases
+  INFO [ef195322] Finished in 0.649 seconds with exit status 0 (successful).
+ DEBUG [4040de0f] Running [ -f ~/domains/stichtingmensch.nl/current/REVISION ] as u114524p110947@web0139.zxcs.nl
+ DEBUG [4040de0f] Command: [ -f ~/domains/stichtingmensch.nl/current/REVISION ]
+ DEBUG [4040de0f] Finished in 0.674 seconds with exit status 0 (successful).
+ DEBUG [98a90bb4] Running /usr/bin/env cat ~/domains/stichtingmensch.nl/current/REVISION 2>/dev/null as u114524p110947@web0139.zxcs.nl
+ DEBUG [98a90bb4] Command: /usr/bin/env cat ~/domains/stichtingmensch.nl/current/REVISION 2>/dev/null
+ DEBUG [98a90bb4] 	d7af158656a21c87b246a5a6d3d91bca9dedc60d
+ DEBUG [98a90bb4] Finished in 0.601 seconds with exit status 0 (successful).
+ DEBUG [f41eba03] Running [ -f ~/domains/stichtingmensch.nl/repo/HEAD ] as u114524p110947@web0139.zxcs.nl
+ DEBUG [f41eba03] Command: [ -f ~/domains/stichtingmensch.nl/repo/HEAD ]
+ DEBUG [f41eba03] Finished in 0.584 seconds with exit status 0 (successful).
+  INFO The repository mirror is at ~/domains/stichtingmensch.nl/repo
+ DEBUG [0c354f1f] Running if test ! -d ~/domains/stichtingmensch.nl/repo; then echo "Directory does not exist '~/domains/stichtingmensch.nl/repo'" 1>&2; false; fi as u114524p110947@web0139.zxcs.nl
+ DEBUG [0c354f1f] Command: if test ! -d ~/domains/stichtingmensch.nl/repo; then echo "Directory does not exist '~/domains/stichtingmensch.nl/repo'" 1>&2; false; fi
+ DEBUG [0c354f1f] Finished in 0.612 seconds with exit status 0 (successful).
+  INFO [1bebf972] Running /usr/bin/env git remote set-url origin git@github.com:Michelium/stichtingmensch.git as u114524p110947@web0139.zxcs.nl
+ DEBUG [1bebf972] Command: cd ~/domains/stichtingmensch.nl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/u114524p110947/tmp/git-ssh-80ca44c5eb1245f047f4.sh" ; /usr/bin/env git remote set-url origin git@github.com:Michelium/stichtingmensch.git )
+  INFO [1bebf972] Finished in 0.719 seconds with exit status 0 (successful).
+  INFO [9a4af126] Running /usr/bin/env git remote update --prune as u114524p110947@web0139.zxcs.nl
+ DEBUG [9a4af126] Command: cd ~/domains/stichtingmensch.nl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/u114524p110947/tmp/git-ssh-80ca44c5eb1245f047f4.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [9a4af126] 	Fetching origin
+ DEBUG [9a4af126] 	From github.com:Michelium/stichtingmensch
+   d7af158..72e06c1  master     -> master
+  INFO [9a4af126] Finished in 3.107 seconds with exit status 0 (successful).
+ DEBUG [91c29fc8] Running if test ! -d ~/domains/stichtingmensch.nl/repo; then echo "Directory does not exist '~/domains/stichtingmensch.nl/repo'" 1>&2; false; fi as u114524p110947@web0139.zxcs.nl
+ DEBUG [91c29fc8] Command: if test ! -d ~/domains/stichtingmensch.nl/repo; then echo "Directory does not exist '~/domains/stichtingmensch.nl/repo'" 1>&2; false; fi
+ DEBUG [91c29fc8] Finished in 0.593 seconds with exit status 0 (successful).
+  INFO [253dcd8f] Running /usr/bin/env mkdir -p ~/domains/stichtingmensch.nl/releases/20221005161540 as u114524p110947@web0139.zxcs.nl
+ DEBUG [253dcd8f] Command: cd ~/domains/stichtingmensch.nl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/u114524p110947/tmp/git-ssh-80ca44c5eb1245f047f4.sh" ; /usr/bin/env mkdir -p ~/domains/stichtingmensch.nl/releases/20221005161540 )
+  INFO [253dcd8f] Finished in 0.633 seconds with exit status 0 (successful).
+  INFO [677aa03a] Running /usr/bin/env git archive master dist | /usr/bin/env tar -x --strip-components 1 -f - -C ~/domains/stichtingmensch.nl/releases/20221005161540 as u114524p110947@web0139.zxcs.nl
+ DEBUG [677aa03a] Command: cd ~/domains/stichtingmensch.nl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/u114524p110947/tmp/git-ssh-80ca44c5eb1245f047f4.sh" ; /usr/bin/env git archive master dist | /usr/bin/env tar -x --strip-components 1 -f - -C ~/domains/stichtingmensch.nl/releases/20221005161540 )
+  INFO [677aa03a] Finished in 0.655 seconds with exit status 0 (successful).
+ DEBUG [573143e2] Running if test ! -d ~/domains/stichtingmensch.nl/repo; then echo "Directory does not exist '~/domains/stichtingmensch.nl/repo'" 1>&2; false; fi as u114524p110947@web0139.zxcs.nl
+ DEBUG [573143e2] Command: if test ! -d ~/domains/stichtingmensch.nl/repo; then echo "Directory does not exist '~/domains/stichtingmensch.nl/repo'" 1>&2; false; fi
+ DEBUG [573143e2] Finished in 0.588 seconds with exit status 0 (successful).
+ DEBUG [422f43d1] Running /usr/bin/env git rev-list --max-count=1 master as u114524p110947@web0139.zxcs.nl
+ DEBUG [422f43d1] Command: cd ~/domains/stichtingmensch.nl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/u114524p110947/tmp/git-ssh-80ca44c5eb1245f047f4.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [422f43d1] 	72e06c1de5327f43fed9c48f32fe1dfe28133a18
+ DEBUG [422f43d1] Finished in 0.588 seconds with exit status 0 (successful).
+ DEBUG [fddfe835] Running if test ! -d ~/domains/stichtingmensch.nl/releases/20221005161540; then echo "Directory does not exist '~/domains/stichtingmensch.nl/releases/20221005161540'" 1>&2; false; fi as u114524p110947@web0139.zxcs.nl
+ DEBUG [fddfe835] Command: if test ! -d ~/domains/stichtingmensch.nl/releases/20221005161540; then echo "Directory does not exist '~/domains/stichtingmensch.nl/releases/20221005161540'" 1>&2; false; fi
+ DEBUG [fddfe835] Finished in 0.613 seconds with exit status 0 (successful).
+  INFO [6d194dd0] Running /usr/bin/env echo "72e06c1de5327f43fed9c48f32fe1dfe28133a18" > REVISION as u114524p110947@web0139.zxcs.nl
+ DEBUG [6d194dd0] Command: cd ~/domains/stichtingmensch.nl/releases/20221005161540 && /usr/bin/env echo "72e06c1de5327f43fed9c48f32fe1dfe28133a18" > REVISION
+  INFO [6d194dd0] Finished in 0.620 seconds with exit status 0 (successful).
+  INFO [f870e62f] Running /usr/bin/env ln -s ~/domains/stichtingmensch.nl/releases/20221005161540 ~/domains/stichtingmensch.nl/releases/current as u114524p110947@web0139.zxcs.nl
+ DEBUG [f870e62f] Command: /usr/bin/env ln -s ~/domains/stichtingmensch.nl/releases/20221005161540 ~/domains/stichtingmensch.nl/releases/current
+  INFO [f870e62f] Finished in 0.597 seconds with exit status 0 (successful).
+  INFO [6f8d652f] Running /usr/bin/env mv ~/domains/stichtingmensch.nl/releases/current ~/domains/stichtingmensch.nl as u114524p110947@web0139.zxcs.nl
+ DEBUG [6f8d652f] Command: /usr/bin/env mv ~/domains/stichtingmensch.nl/releases/current ~/domains/stichtingmensch.nl
+  INFO [6f8d652f] Finished in 0.599 seconds with exit status 0 (successful).
+ DEBUG [7f18d379] Running /usr/bin/env ls -x ~/domains/stichtingmensch.nl/releases as u114524p110947@web0139.zxcs.nl
+ DEBUG [7f18d379] Command: /usr/bin/env ls -x ~/domains/stichtingmensch.nl/releases
+ DEBUG [7f18d379] 	20211012160714	20211012161049	20211012171709	20211023092657	20211023092928
+20221005161540
+ DEBUG [7f18d379] Finished in 0.602 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on web0139.zxcs.nl
+ DEBUG [80459595] Running [ -d ~/domains/stichtingmensch.nl/current ] as u114524p110947@web0139.zxcs.nl
+ DEBUG [80459595] Command: [ -d ~/domains/stichtingmensch.nl/current ]
+ DEBUG [80459595] Finished in 1.356 seconds with exit status 0 (successful).
+ DEBUG [5c440342] Running /usr/bin/env readlink ~/domains/stichtingmensch.nl/current as u114524p110947@web0139.zxcs.nl
+ DEBUG [5c440342] Command: /usr/bin/env readlink ~/domains/stichtingmensch.nl/current
+ DEBUG [5c440342] 	/home/u114524p110947/domains/stichtingmensch.nl/releases/20221005161540
+ DEBUG [5c440342] Finished in 1.581 seconds with exit status 0 (successful).
+  INFO [b26a1531] Running /usr/bin/env rm -rf ~/domains/stichtingmensch.nl/releases/20211012160714 as u114524p110947@web0139.zxcs.nl
+ DEBUG [b26a1531] Command: /usr/bin/env rm -rf ~/domains/stichtingmensch.nl/releases/20211012160714
+  INFO [b26a1531] Finished in 1.284 seconds with exit status 0 (successful).
+ DEBUG [fea08a28] Running if test ! -d ~/domains/stichtingmensch.nl/releases; then echo "Directory does not exist '~/domains/stichtingmensch.nl/releases'" 1>&2; false; fi as u114524p110947@web0139.zxcs.nl
+ DEBUG [fea08a28] Command: if test ! -d ~/domains/stichtingmensch.nl/releases; then echo "Directory does not exist '~/domains/stichtingmensch.nl/releases'" 1>&2; false; fi
+ DEBUG [fea08a28] Finished in 0.665 seconds with exit status 0 (successful).
+  INFO [dcad67ff] Running /usr/bin/env echo "Branch master (at 72e06c1de5327f43fed9c48f32fe1dfe28133a18) deployed as release 20221005161540 by michel" >> ~/domains/stichtingmensch.nl/revisions.log as u114524p110947@web0139.zxcs.nl
+ DEBUG [dcad67ff] Command: cd ~/domains/stichtingmensch.nl/releases && /usr/bin/env echo "Branch master (at 72e06c1de5327f43fed9c48f32fe1dfe28133a18) deployed as release 20221005161540 by michel" >> ~/domains/stichtingmensch.nl/revisions.log
+  INFO [dcad67ff] Finished in 0.679 seconds with exit status 0 (successful).
